@@ -13,6 +13,13 @@
 		62E6C97C2847AB730085CE4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62E6C97A2847AB730085CE4E /* Main.storyboard */; };
 		62E6C97E2847AB740085CE4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62E6C97D2847AB740085CE4E /* Assets.xcassets */; };
 		62E6C9812847AB740085CE4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62E6C97F2847AB740085CE4E /* LaunchScreen.storyboard */; };
+		62E6C98A2847AB900085CE4E /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6C9892847AB900085CE4E /* Vehicles.swift */; };
+		62E6C98C2847ABA80085CE4E /* VehicleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6C98B2847ABA80085CE4E /* VehicleData.swift */; };
+		62E6C98E2847ABD70085CE4E /* Included.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6C98D2847ABD70085CE4E /* Included.swift */; };
+		62E6C9912847AC010085CE4E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6C9902847AC010085CE4E /* NetworkManager.swift */; };
+		62E6C9932847AD0C0085CE4E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6C9922847AD0C0085CE4E /* NetworkError.swift */; };
+		62E6C9962847DC020085CE4E /* VehiclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6C9952847DC020085CE4E /* VehiclesViewModel.swift */; };
+		62E6C9A42849482C0085CE4E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6C9A32849482C0085CE4E /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		62E6C97D2847AB740085CE4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62E6C9802847AB740085CE4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62E6C9822847AB740085CE4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62E6C9892847AB900085CE4E /* Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicles.swift; sourceTree = "<group>"; };
+		62E6C98B2847ABA80085CE4E /* VehicleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleData.swift; sourceTree = "<group>"; };
+		62E6C98D2847ABD70085CE4E /* Included.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Included.swift; sourceTree = "<group>"; };
+		62E6C9902847AC010085CE4E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		62E6C9922847AD0C0085CE4E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		62E6C9952847DC020085CE4E /* VehiclesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewModel.swift; sourceTree = "<group>"; };
+		62E6C9A32849482C0085CE4E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,54 @@
 		62E6C9732847AB730085CE4E /* OutdoorsyWCombine */ = {
 			isa = PBXGroup;
 			children = (
+				62E6C9972847E2000085CE4E /* View */,
+				62E6C9942847DBEE0085CE4E /* ViewModel */,
+				62E6C98F2847ABF00085CE4E /* NetworkManager */,
+				62E6C9882847AB840085CE4E /* Model */,
 				62E6C9742847AB730085CE4E /* AppDelegate.swift */,
 				62E6C9762847AB730085CE4E /* SceneDelegate.swift */,
-				62E6C9782847AB730085CE4E /* ViewController.swift */,
 				62E6C97A2847AB730085CE4E /* Main.storyboard */,
 				62E6C97D2847AB740085CE4E /* Assets.xcassets */,
 				62E6C97F2847AB740085CE4E /* LaunchScreen.storyboard */,
 				62E6C9822847AB740085CE4E /* Info.plist */,
 			);
 			path = OutdoorsyWCombine;
+			sourceTree = "<group>";
+		};
+		62E6C9882847AB840085CE4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62E6C9892847AB900085CE4E /* Vehicles.swift */,
+				62E6C98B2847ABA80085CE4E /* VehicleData.swift */,
+				62E6C98D2847ABD70085CE4E /* Included.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		62E6C98F2847ABF00085CE4E /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				62E6C9902847AC010085CE4E /* NetworkManager.swift */,
+				62E6C9922847AD0C0085CE4E /* NetworkError.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		62E6C9942847DBEE0085CE4E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				62E6C9952847DC020085CE4E /* VehiclesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		62E6C9972847E2000085CE4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62E6C9782847AB730085CE4E /* ViewController.swift */,
+				62E6C9A32849482C0085CE4E /* CollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +191,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62E6C9A42849482C0085CE4E /* CollectionViewCell.swift in Sources */,
+				62E6C98A2847AB900085CE4E /* Vehicles.swift in Sources */,
+				62E6C9932847AD0C0085CE4E /* NetworkError.swift in Sources */,
+				62E6C9962847DC020085CE4E /* VehiclesViewModel.swift in Sources */,
+				62E6C98E2847ABD70085CE4E /* Included.swift in Sources */,
 				62E6C9792847AB730085CE4E /* ViewController.swift in Sources */,
+				62E6C9912847AC010085CE4E /* NetworkManager.swift in Sources */,
 				62E6C9752847AB730085CE4E /* AppDelegate.swift in Sources */,
 				62E6C9772847AB730085CE4E /* SceneDelegate.swift in Sources */,
+				62E6C98C2847ABA80085CE4E /* VehicleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
